@@ -162,6 +162,9 @@
     @media (max-width: 768px) {
       body {
         background-color: #e5eff5;
+        background: url('images/background-mobile.jpg') no-repeat center top; /* Чтобы всё влезло */
+        background-size: auto;
+        background-attachment: scroll;
         color: #000000;
       }
       
@@ -169,11 +172,8 @@
         max-width: 600px;
         margin: 2rem auto;
         padding: 2rem;
-        background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+        background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
                     no-repeat center center fixed;
-        background: url('images/background-mobile.jpg') no-repeat center top; /* Чтобы всё влезло */
-        background-size: auto;
-        background-attachment: scroll;
         border-radius: 20px;
         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
         color: #000000;
