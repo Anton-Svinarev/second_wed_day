@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Второй день свадьбы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comfortaa', cursive;
+      background: url('images/background.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: scroll;
+      color: #000000;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+                  no-repeat center center fixed;
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+      color: #000000;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .names {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .info {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 1.5rem 0;
+    }
+
+    .section-heading {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    input[type="text"], textarea {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      width: 80%;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 60px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .option-btn {
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      max-width: 200px;
+      white-space: normal;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    .option-btn.active {
+      background-color: #6aa4bc;
+      color: #ffffff;
+    }
+
+    .option-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .rsvp-btn {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    .rsvp-btn:hover {
+      background-color: #eaeaea;
+      transform: translateY(-2px);
+    }
+
+    .success-msg {
+      margin-top: 1rem;
+      color: green;
+      font-weight: bold;
+    }
+
+    .map-center {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .map-box {
+      padding: 10px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .map-box iframe {
+      width: 320px;
+      height: 320px;
+      border-radius: 12px;
+      border: none;
+    }
+
+    .timing {
+      text-align: left;
+      font-size: 0.95rem;
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 12px;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    .timing strong {
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    @media (max-width: 768px) {
+      body {
+        background-color: #e5eff5;
+        color: #000000;
+      }
+      
+      container {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+                    no-repeat center center fixed;
+        background: url('images/background-mobile.jpg') no-repeat center top; /* Чтобы всё влезло */
+        background-size: auto;
+        background-attachment: scroll;
+        border-radius: 20px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+        color: #000000;
+        overflow-x: auto;
+      }
+    }     
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Приглашение</h1>
+    <div class="names">Антон & Анастасия</div>
+
+    <div class="info">
+      📍 <strong>Национальный конный парк "РУСЬ"</strong><br>
+      Московская область, Ленинский городской округ, село Орлово
+      <div class="map-center">
+        <div class="map-box">
+          <iframe 
+            src="https://yandex.ru/map-widget/v1/?ll=37.878299%2C55.549536&z=16&pt=37.878299,55.549536,pm2rdm" 
+            allowfullscreen="true">
+          </iframe>
+        </div>
+      </div><br>
+      🗓️ <strong>16 августа 2025 года</strong><br>
+      🕒 <strong>Начало — как отойдёте после первого дня 😉</strong><br>
+      (примерно в 11:00)
+    </div>
+
+    <div class="timing">
+      <strong>Примерный тайминг:</strong><br><br>
+      12:00 — Сбор 🕛<br>
+      13:00 — Отмокание 🏄‍♂️<br>
+      16:00 — Покатушки на эндуро/квадроциклах 🏍️<br>
+      17:30 — Тусня 🎉
+    </div><br>
+
+    <input type="text" id="guestName" placeholder="Введите ваше имя">
+    <div class="section-heading">Выберите активность</div>
+    
+    <div class="btn-group">
+      <button class="option-btn" onclick="selectOption('Эндуро')">🏍️ Эндуро</button>
+      <button class="option-btn" onclick="selectOption('Квадроцикл')">🛺 Квадроцикл</button>
+      <button class="option-btn" onclick="selectOption('Я старый(ая), скучный(ая) Посижу дома один(на)')">🧓 Я старый(ая), скучный(ая) Посижу дома один(на)</button>
+    </div>
+
+    <textarea id="comment" placeholder="Комментарий (если есть)"></textarea>
+
+    <button class="rsvp-btn" onclick="sendTelegramForm()">Подтверждаю участие</button>
+    <div class="success-msg" id="successMsg"></div>
+
+    <footer>
+      © 2025 Антон и Анастасия
+    </footer>
+  </div>
+
+  <script>
+    let selectedOption = '';
+
+    function selectOption(value) {
+      selectedOption = value;
+      const buttons = document.querySelectorAll('.option-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      buttons.forEach(btn => {
+        if (btn.innerText.includes(value)) btn.classList.add('active');
+      });
+    }
+
+    async function sendTelegramForm() {
+      const name = document.getElementById('guestName').value.trim();
+      const commentRaw = document.getElementById('comment').value.trim();
+      const comment = commentRaw ? commentRaw : '—';
+
+      if (!name || !selectedOption) {
+        document.getElementById('successMsg').innerText = 'Пожалуйста, введите имя и выберите вариант.';
+        return;
+      }
+
+      const botToken = '8164010490:AAHsKceCpYC_7DXEB4QZbqykJ8iTUrYvhAg';
+      const chatId = '374372946';
+
+      const message = `📨 Новая анкета:\n👤 Имя: ${name}\n🚀 Выбор активности: ${selectedOption}\n💬 Комментарий: ${comment}`;
+
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: message
+          })
+        });
+
+        if (response.ok) {
+          document.getElementById('successMsg').innerText = 'Спасибо! Анкета отправлена.';
+        } else {
+          document.getElementById('successMsg').innerText = 'Ошибка при отправке. Попробуйте позже.';
+        }
+      } catch (error) {
+        document.getElementById('successMsg').innerText = 'Ошибка соединения с Telegram.';
+        console.error(error);
+      }
+    }
+  </script>
+</body>
+</html>
