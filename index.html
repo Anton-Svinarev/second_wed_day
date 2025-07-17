@@ -162,24 +162,28 @@
     @media (max-width: 768px) {
       body {
         background-color: #e5eff5;
-        background: url('images/background-mobile.jpg') no-repeat center top; /* Чтобы всё влезло */
+        background-image: url('images/background-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
         background-size: auto;
         background-attachment: scroll;
         color: #000000;
       }
-      
-      container {
+
+      .container {
         max-width: 600px;
         margin: 2rem auto;
         padding: 2rem;
-        background: linear-gradient(#eeeeee00, rgba(255, 255, 255, 0.1)),
-                    no-repeat center center fixed;
+        background-image: linear-gradient(#eeeeee00, rgba(255, 255, 255, 0.1));
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
         border-radius: 20px;
         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
         color: #000000;
         overflow-x: auto;
       }
-    }     
+    }
 
   </style>
 </head>
